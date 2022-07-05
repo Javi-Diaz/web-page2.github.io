@@ -298,7 +298,6 @@ body, html{
 .tours .row .col-images .image-gallery{
 	display: flex;
 	width: 100%;
-
 	flex-wrap: wrap;
 }
 
@@ -344,11 +343,11 @@ body, html{
 		font-size: 30px;
 	} 
 	/* MENU RESPONSIVE */
-	
 	.principal .navbar .menu .menu-btn{
 		display: block;
 		position: absolute;
 		z-index: 15;
+		width: 30px;
 	}
 
 	.principal .navbar{
@@ -368,7 +367,7 @@ body, html{
 		height: 100vh;
 		justify-content: center;
 		background: #484872;
-		margin-top: -900px;
+		margin-top: -1000px;
 		transition: all .5s ease;
 		position: absolute;
 		z-index: 10;
@@ -394,14 +393,6 @@ body, html{
 	/* Events */
 	.events h2{
 		font-size: 30px;
-	}
-
-	.events .row .col h3{
-		font-size: 20px;
-	}
-
-	.events .row{
-		flex-direction: column;
 	}
 
 	.events .row .col{
@@ -455,5 +446,15 @@ body, html{
 	/* FOOTER */
 	.footer{
 		padding: 10px;
+	}
+}
+
+@media  screen and (max-width: 1425px){
+	.events .row{
+		flex-direction: column;
+	}
+
+	.events .row .col{
+		margin: 20px auto;
 	}
 }
